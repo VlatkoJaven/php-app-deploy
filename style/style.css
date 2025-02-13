@@ -1,0 +1,21 @@
+.form-width {
+  width: 40%;
+  margin: 0 auto;
+}
+.wrapper {
+  margin-top: 50px;
+}
+
+.welcome {
+  font: 14px sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.icon-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Show pointer cursor */
+  color: inherit; /* Inherit text color */
+}
