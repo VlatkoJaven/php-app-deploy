@@ -1,4 +1,3 @@
-version: "3"
 services:
   web:
     build: .
@@ -13,10 +12,10 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: "MySecurePass123!" # Fixed password
+      MYSQL_ROOT_PASSWORD: "MySecurePass123!"
       MYSQL_DATABASE: "php-app-deploy"
       MYSQL_USER: "appuser"
-      MYSQL_PASSWORD: "AppUserPass456!" # User password added
+      MYSQL_PASSWORD: "AppUserPass456!"
     ports:
       - "3306:3306"
     volumes:
