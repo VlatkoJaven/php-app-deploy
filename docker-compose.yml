@@ -1,5 +1,4 @@
-version: "3.8"
-
+version: "3"
 services:
   web:
     build: .
@@ -14,10 +13,8 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: "" # Empty password
+      MYSQL_ROOT_PASSWORD: "myDbPassForWebApp123" # Set a root password for MySQL
       MYSQL_DATABASE: php-app-deploy
-      MYSQL_USER: root
-      MYSQL_PASSWORD: "" # Empty password
     ports:
       - "3306:3306"
     volumes:
