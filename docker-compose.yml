@@ -13,8 +13,10 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: "myDbPassForWebApp123" # Set a root password for MySQL
-      MYSQL_DATABASE: php-app-deploy
+      MYSQL_ROOT_PASSWORD: "MySecurePass123!" # Fixed password
+      MYSQL_DATABASE: "php-app-deploy"
+      MYSQL_USER: "appuser"
+      MYSQL_PASSWORD: "AppUserPass456!" # User password added
     ports:
       - "3306:3306"
     volumes:
