@@ -1,6 +1,6 @@
 <?php
-// Initialize the session
-session_start();
+// Start the session at the very top, before any HTML or output
+//session_start();
 
 // Check if the user is already logged in, if yes then redirect to welcome page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {

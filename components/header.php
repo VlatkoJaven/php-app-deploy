@@ -1,7 +1,7 @@
 <?php
 
 // Base URL for the project
-$base_url = "http://" . $_SERVER['HTTP_HOST'] . "/php-app-deploy/";
+$base_url = "http://" . $_SERVER['HTTP_HOST'] . "/";
 
 // Start the session
 if (session_status() === PHP_SESSION_NONE) {
